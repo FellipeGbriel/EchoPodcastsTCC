@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PretoFundo"
+    tools:context=".ouvir_categorias">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="210dp"
+        android:layout_height="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_curto"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cat_portugues"
+                android:layout_width="160dp"
+                android:clickable="true"
+                android:onClick="filtroPortugues"
+                android:layout_height="70dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/icon_portugues" />
+
+            <ImageView
+                android:id="@+id/cat_matematica"
+                android:layout_width="160dp"
+                android:clickable="true"
+                android:onClick="filtroMatematica"
+                android:layout_height="70dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/icon_matematica" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cat_historia"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:onClick="filtroHistoria"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/icon_historia" />
+
+            <ImageView
+                android:id="@+id/cat_geografia"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:onClick="filtroGeografia"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/icon_geografia" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cat_biologia"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:onClick="filtroBiologia"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/icon_biologia" />
+
+            <ImageView
+                android:id="@+id/cat_fisica"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:onClick="filtroFisica"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/icon_fisica" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cat_quimica"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:onClick="filtroQuimica"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/icon_quimica" />
+
+            <ImageView
+                android:id="@+id/cat_filosofia"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:onClick="filtroFilosofia"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/icon_filosofia" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cat_ingles"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:onClick="filtroIngles"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/icon_ingles" />
+
+            <ImageView
+                android:id="@+id/cat_espanhol"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:onClick="filtroEspanhol"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/icon_espanhol" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/sf_pro_rounded_heavy"
+        android:text="Categorias"
+        android:textColor="@color/RosaEcho"
+        android:textSize="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.echopodcasts">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logotipo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logotipo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EchoPodcasts.NoActionBar.FullScreen">
+        <activity
+            android:name=".tela_home_monitor"
+            android:exported="false" />
+        <activity
+            android:name=".tela_playerGerenciar"
+            android:exported="false" />
+        <activity
+            android:name=".tela_homeAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".tela_player"
+            android:exported="false" />
+        <activity
+            android:name=".ouvir_categorias"
+            android:exported="true" />
+        <activity
+            android:name=".upload_arquivo"
+            android:exported="true" />
+        <activity
+            android:name=".tela_home_comum"
+            android:exported="true" />
+        <activity
+            android:name=".cadastro_comum2"
+            android:exported="true" />
+        <activity
+            android:name=".tela_login"
+            android:exported="true" />
+        <activity
+            android:name=".cadastro_comum"
+            android:exported="true" />
+        <activity
+            android:name=".tela_inicial"
+            android:exported="true" />
+        <activity
+            android:name=".splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

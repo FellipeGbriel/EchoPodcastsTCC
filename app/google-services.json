@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "863572700219",
+    "project_id": "echo-podcasts",
+    "storage_bucket": "echo-podcasts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863572700219:android:4c5736737f52368d2f001e",
+        "android_client_info": {
+          "package_name": "com.example.echopodcasts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863572700219-gej8nifmugav7ajt24mktabo2vr0kho7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8R35DU3CBz1BgSwUGJAlp4df1vfEiNQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863572700219-gej8nifmugav7ajt24mktabo2vr0kho7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/PretoFundo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".tela_playerGerenciar"
+    android:focusable="true">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="210dp"
+        android:layout_height="85dp"
+        app:srcCompat="@drawable/logo_curto">
+
+    </ImageView>
+
+    <ListView
+        android:id="@+id/listViewPodcasts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:focusableInTouchMode="false"
+        tools:listitem="@layout/row_listview"
+        android:choiceMode="singleChoice"
+        android:drawSelectorOnTop="true">
+
+    </ListView>
+
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:id="@+id/jcplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:next_icon_color="@color/RosaEcho"
+        app:pause_icon_color="@color/RosaEcho"
+        app:play_icon_color="@color/RosaEcho"
+        app:previous_icon_color="@color/RosaEcho"
+        app:progress_color="@color/RosaEcho"
+        app:random_icon_color="@color/RosaEcho"
+        app:repeat_icon_color="@color/RosaEcho"
+        app:repeat_one_icon_color="@color/RosaEcho"
+        app:seek_bar_color="@color/RosaEcho"
+        app:text_audio_current_duration_color="@color/RosaEcho"
+        app:text_audio_duration_color="@color/RosaEcho"
+        app:text_audio_title_color="@color/RosaEcho"
+        android:visibility="gone"
+        android:theme="@style/Theme.EchoPodcasts.NoActionBar.FullScreen"
+        />
+
+
+</LinearLayout>
