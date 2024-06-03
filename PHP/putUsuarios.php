@@ -20,7 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $nome = "'".$_POST['nome']."'";
     $email = "'".$_POST['email']."'";
     $senha = "'".$_POST['senha']."'";
-    $tipoUser_id = "'".$_POST['tipoUser_id']."'";// Remover depois
     $escolaridade_id = "'".$_POST['escolaridade_id']."'";
     $apelido = "'".$_POST['apelido']."'";
     $cript = "'".$_POST['cript']."'";
