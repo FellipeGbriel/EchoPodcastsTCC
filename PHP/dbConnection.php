@@ -4,9 +4,9 @@ $ambiente = false;
 if ($ambiente) { //Ambiente de Produção
 
     $HostName = "localhost";
-    $HostUser = "id17479246_admin";
-    $HostPass = "RS8u%qAUZf!6Knyc";
-    $DatabaseName = "id17479246_testeechobd";
+    $HostUser = "";
+    $HostPass = "";
+    $DatabaseName = "";
 }
 
 else { // Ambiente de Desenvolvimento
