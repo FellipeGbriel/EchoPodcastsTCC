@@ -22,6 +22,33 @@ O trabalho parte da queda no rendimento escolar registrada durante o ensino remo
 - **Download dos episódios** via `DownloadManager`, permitindo consumo offline.
 - **Envio de áudios** pelo monitor: seleção do arquivo do dispositivo, escolha de categoria e título, com upload para o Firebase Storage e registro dos metadados no Realtime Database.
 
+## Telas
+
+Capturas do aplicativo em execução, conforme apresentadas na monografia.
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/prints/01-splash.png" width="190"><br><sub>Abertura</sub></td>
+    <td align="center"><img src="docs/prints/02-tela-inicial.png" width="190"><br><sub>Tela inicial</sub></td>
+    <td align="center"><img src="docs/prints/03-cadastro-1.png" width="190"><br><sub>Cadastro — dados</sub></td>
+    <td align="center"><img src="docs/prints/04-cadastro-2.png" width="190"><br><sub>Cadastro — escolaridade</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/prints/05-login.png" width="190"><br><sub>Login</sub></td>
+    <td align="center"><img src="docs/prints/06-home-estudante.png" width="190"><br><sub>Home — estudante</sub></td>
+    <td align="center"><img src="docs/prints/07-home-monitor.png" width="190"><br><sub>Home — monitor</sub></td>
+    <td align="center"><img src="docs/prints/08-home-administrador.png" width="190"><br><sub>Home — administrador</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/prints/09-categorias.png" width="190"><br><sub>Categorias</sub></td>
+    <td align="center"><img src="docs/prints/10-player-portugues.png" width="190"><br><sub>Player — Português</sub></td>
+    <td align="center"><img src="docs/prints/11-notificacao-player.png" width="190"><br><sub>Player na notificação</sub></td>
+    <td align="center"><img src="docs/prints/12-gerenciamento.png" width="190"><br><sub>Gerenciamento de cargos</sub></td>
+  </tr>
+</table>
+
+As três telas home deixam clara a distinção entre os perfis: o estudante vê apenas *Ouvir* e *Sair*; o monitor ganha o botão *Enviar*; o administrador acrescenta o *Gerenciar*.
+
 ## Arquitetura
 
 O app usa duas fontes de dados distintas, cada uma com um papel:
@@ -43,6 +70,11 @@ O app usa duas fontes de dados distintas, cada uma com um papel:
 - **MySQL via PHP** — contas de usuário. O app faz `POST` com Volley para scripts PHP hospedados, que consultam e gravam na tabela `usuarios` (`nome`, `email`, `senha`, `apelido`, `tipoUser_id`, `escolaridade_id`). A senha é gravada com `AES_ENCRYPT` do MySQL.
 - **Firebase** — mídia. Os arquivos de áudio vão para o Storage (nó `audios`) e seus metadados para o Realtime Database (nó `audios`), consultados com `orderByChild("audiosCategory").equalTo(categoria)`.
 
+### Casos de uso
+
+<img src="docs/prints/diagrama-casos-de-uso.png" width="640">
+
+
 ## Estrutura do repositório
 
 ```
@@ -63,6 +95,8 @@ app/src/main/java/com/example/echopodcasts/
 └── Model/
     ├── EnviarArquivo.java    # Modelo de escrita no Realtime Database
     └── ReceberArquivo.java   # Modelo de leitura do Realtime Database
+
+docs/prints/                  # Capturas de tela e diagrama extraídos da monografia
 
 PHP/
 ├── dbConnection.php          # Credenciais do MySQL (dev/produção)
